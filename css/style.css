@@ -1,0 +1,76 @@
+/* debug */
+/* section {
+    background-color: red;
+} */
+/* /debug */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    border: 2px solid black;
+    height: 804px;
+}
+
+section {
+    float: left;
+    width: 70%;
+    height: 100%;
+    background-image: url('https://i.ytimg.com/vi/roS6oFjCDhc/maxresdefault.jpg');
+    background-size: cover;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+.toolbar {
+    height: 55px;
+    margin-top: 745px;
+    line-height: 50px;
+    border-top: 5px solid red;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.toolbar i {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.toolbar i:hover {
+    color: red;
+}
+
+.video {
+    margin: 10px 0;
+}
+.video::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.video > img {
+    float: left;
+    width: 50%;
+}
+.video > h2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
